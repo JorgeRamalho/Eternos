@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eternos.com.br/sitemap.xml

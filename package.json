@@ -1,0 +1,15 @@
+{
+  "name": "eternos",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Eternos — casa de moda masculina em Curitiba. (E) Ternos, gravatas e esporte fino.",
+  "scripts": {
+    "dev": "npx --yes serve . -l 4173",
+    "test": "npx playwright test",
+    "test:ui": "npx playwright test --ui",
+    "test:report": "npx playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0"
+  }
+}

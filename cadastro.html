@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Criar conta Eternos | Cadastro de cliente</title>
+  <meta name="description" content="Crie sua conta Eternos para salvar medidas, escolher a loja de preferência em Curitiba e receber convites de prova.">
+  <link rel="canonical" href="https://eternos.com.br/cadastro.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="robots" content="noindex, follow">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="cursor" aria-hidden="true"></div>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Eternos, página inicial">
+        <span>
+          <span class="brand__e">E</span><span class="brand__rest">ternos</span>
+          <span class="brand__hint">(E) Ternos</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="index.html">Início</a>
+        <a href="colecao.html">Coleção</a>
+        <a href="lojas.html">Lojas</a>
+        <a href="sobre.html">A marca</a>
+        <a href="cadastro.html" aria-current="page">Conta</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn--solid" href="cadastro.html">Criar conta</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Abrir menu"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <header class="page-hero">
+    <div class="wrap">
+      <p class="kicker">Clube Eternos</p>
+      <h1>Criar conta</h1>
+      <p class="lead">Dados essenciais para abrir sua conta, registrar preferências e ser reconhecido em qualquer uma das quatro casas.</p>
+    </div>
+  </header>
+
+  <main id="conteudo" class="section" style="padding-top:1rem">
+    <div class="wrap form-shell">
+      <aside class="reveal">
+        <img class="brand-plate" src="assets/logo-e.jpg" alt="Monograma E da Eternos em ouro champanhe, o E que destaca o terno." width="640" height="640">
+        <p class="kicker">Por que cadastrar</p>
+        <h2 class="display">Seu corte, arquivado.</h2>
+        <p class="lead">A conta guarda nome, contato e a loja em que você prefere provar. Nada de excesso: só o necessário para um atendimento à altura da casa.</p>
+        <ul class="lead" style="padding-left:1.1rem">
+          <li>Preferência entre Batel, Juvevê, Água Verde e Centro</li>
+          <li>Convites de lançamento e prova</li>
+          <li>Histórico de estilo: social, esporte fino ou ambos</li>
+        </ul>
+      </aside>
+
+      <form id="cadastro-form" class="reveal" novalidate>
+        <div class="field">
+          <label for="nome">Nome completo</label>
+          <input id="nome" name="nome" type="text" autocomplete="name" required minlength="3" placeholder="Como deseja ser anunciado">
+          <span class="error" aria-live="polite"></span>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" autocomplete="email" required placeholder="nome@email.com">
+            <span class="error" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="telefone">Telefone</label>
+            <input id="telefone" name="telefone" type="tel" autocomplete="tel" required inputmode="numeric" placeholder="(41) 90000-0000">
+            <span class="error" aria-live="polite"></span>
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="cpf">CPF</label>
+            <input id="cpf" name="cpf" type="text" required inputmode="numeric" placeholder="000.000.000-00" autocomplete="off">
+            <span class="error" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="nascimento">Data de nascimento</label>
+            <input id="nascimento" name="nascimento" type="date" autocomplete="bday" required>
+            <span class="error" aria-live="polite"></span>
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="loja">Loja de preferência</label>
+            <select id="loja" name="loja" required>
+              <option value="">Escolher casa</option>
+              <option value="batel">Loja 1 — Batel</option>
+              <option value="juveve">Loja 2 — Juvevê</option>
+              <option value="agua-verde">Loja 3 — Água Verde</option>
+              <option value="centro">Loja 4 — Centro</option>
+            </select>
+            <span class="error" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="estilo">Universo</label>
+            <select id="estilo" name="estilo" required>
+              <option value="">Como se veste</option>
+              <option value="social">Terno social</option>
+              <option value="esporte">Esporte fino</option>
+              <option value="ambos">Ambos</option>
+            </select>
+            <span class="error" aria-live="polite"></span>
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="senha">Senha</label>
+            <input id="senha" name="senha" type="password" autocomplete="new-password" required minlength="8">
+            <div class="strength" aria-hidden="true"><span></span></div>
+            <span class="hint">Mínimo 8 caracteres, com maiúscula e número.</span>
+            <span class="error" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="confirmar">Confirmar senha</label>
+            <input id="confirmar" name="confirmar" type="password" autocomplete="new-password" required>
+            <span class="error" aria-live="polite"></span>
+          </div>
+        </div>
+        <label class="check">
+          <input id="novidades" name="novidades" type="checkbox" checked>
+          <span>Quero receber convites de prova e lançamentos da casa.</span>
+        </label>
+        <label class="check">
+          <input id="termos" name="termos" type="checkbox" required>
+          <span>Li e aceito o uso dos meus dados para criar a conta Eternos.</span>
+          <span class="error" aria-live="polite"></span>
+        </label>
+        <button class="btn btn--solid" type="submit">Criar minha conta</button>
+      </form>
+
+      <section id="cadastro-sucesso" class="form-success" tabindex="-1" aria-live="polite">
+        <p class="kicker">Conta criada</p>
+        <h2 class="display" aria-label="Bem-vindo aos Eternos.">Bem-vindo aos <span class="gold-e" aria-hidden="true">E</span>ternos.</h2>
+        <p class="lead">Seu cadastro foi registrado neste dispositivo. Em qualquer uma das quatro casas, mencione seu nome — a equipe já saberá por onde começar.</p>
+        <p><a class="btn btn--solid" href="colecao.html">Ver a coleção</a></p>
+      </section>
+    </div>
+  </main>
+
+  <div class="notice" role="status"></div>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <h2><span class="gold-e">E</span>ternos</h2>
+        <p>Cadastro reservado. Dados usados apenas para atendimento da casa.</p>
+      </div>
+      <div>
+        <h3>Casa</h3>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="lojas.html">Lojas</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Privacidade</h3>
+        <p>Não compartilhamos sua conta com terceiros.</p>
+      </div>
+      <div>
+        <h3>Atendimento</h3>
+        <p>atendimento@eternos.com.br</p>
+      </div>
+    </div>
+    <div class="wrap legal">
+      <span>© <span data-year></span> Eternos.</span>
+      <span>Curitiba — Paraná</span>
+    </div>
+  </footer>
+  <script src="js/main.js" defer></script>
+  <script src="js/form.js" defer></script>
+</body>
+</html>
